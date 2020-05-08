@@ -22,7 +22,7 @@ function showTime() {
     // Output time 
     timeDisp.innerHTML = `${hour}<span>:</span>${addZero(mins)}<span>:</span>${addZero(secs)} ${showAmPm ? amPm : ''}`;
 
-    setInterval(showTime, 1000);
+    setTimeout(showTime, 1000);
 }
 
 // add zeros to time
